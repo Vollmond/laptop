@@ -3,6 +3,7 @@ dependencies:
     - /usr/local/Homebrew
   override:
     - brew install shellcheck
+    - echo '2.4.1' >> /Users/distiller/laptop/.ruby-version
 
 machine:
   ruby:
