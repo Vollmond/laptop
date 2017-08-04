@@ -1,0 +1,16 @@
+dependencies:
+  cache_directories:
+    - /usr/local/Homebrew
+  override:
+    - brew install shellcheck
+
+machine:
+  ruby:
+    version: 2.4.1
+  xcode:
+    version: 8.3.3
+
+test:
+  post:
+    - shellcheck mac -e SC2039
+    - sh mac
